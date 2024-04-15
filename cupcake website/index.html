@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title> Cupcake Landing page </title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section>
+<div class="circle"></div>
+<header>
+<a href="#"> <img src="logo.gif" class="logo"></a>
+<ul>
+<li><a href="">Home</a></li>
+<li><a href="">Menu</a></li>
+<li><a href="">What's new</a></li>
+<li><a href="">Contact</a></li>
+</ul>
+</header>
+<div class="content">
+<div class="textbox">
+<h2>It's not just Cake <br> It's <span> Cupcake</span></h2>
+<p>Cupcakes are delightful single-serving cakes that are typically 
+baked in small, thin paper or aluminum cups. 
+They come in a variety of flavors, from classic vanilla and 
+chocolate to more adventurous options like
+red velvet, lemon, or even matcha.
+Cupcakes are often topped with frosting, which can be 
+buttercream, cream cheese, ganache, or fondant, among others.</p>
+<a href="#">Order Now</a>
+</div>
+<div class="cupcake">
+<img src="cupcake1.jpg" class="Cupcake">
+</div>
+</div>
+<ul class="thumb">
+<li><a href="#"><img src="cupcake1.jpg" onclick="imgSlider('cupcake1.jpg'); changeCircleColor('#d87093')" ></a></li>
+<li><a href="#"><img src="cupcake2.jpg" onclick="imgSlider('cupcake2.png'); changeCircleColor('#f08080')" ></a></li>
+<li><a href="#"><img src="cupcake3.jpg" onclick="imgSlider('cupcake3.jpg'); changeCircleColor('#a52a2a')" ></a></li>
+</ul>
+</section>
+<script type="text/javascript">
+function imgSlider(anything) {
+document.querySelector('Cupcake').src=anything;
+}
+function changeCircleColor(color) {
+const circle = document.querySelector('.circle');
+circle.style.background=color;
+}
+</script>
+</body>
+</html>
